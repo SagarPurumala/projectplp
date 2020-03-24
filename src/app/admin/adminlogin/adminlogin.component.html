@@ -1,1 +1,25 @@
-<p>adminlogin works!</p>
+
+<div class="admin">
+    <div class="card col-lg-4 offset-lg-4 " style="margin-top: 100px;" id="adminlogin">
+        <div class="card-body m-3">
+            <form [formGroup]="aloginGroup">
+            <h3 style="color: red;">Administrator login</h3>
+            <div class="form-group">
+                <label for="" style="color: blue;">Username</label>
+                <input type="text" name="" id="te" class="form-control" placeholder="" aria-describedby="helpId" ngModel formControlName="aemail">
+
+            </div>
+            <div class="form-group">
+                <label for="" style="color: blue;">Password</label>
+                <input type="password" name="" id="te" class="form-control" placeholder="" aria-describedby="helpId" ngModel formControlName="apassword">
+
+            </div>
+            <span *ngIf="error" style="color:red;">Email and password is incorrect</span><br>
+            <div class="col-sm-10 mb-2">
+                <button type="submit" class="btn btn-primary" (click)="submit()" >Login</button>
+                <button type="submit" class="btn btn-danger" style="margin-left: 20px;">Cancel</button>
+            </div>
+        </form>
+        </div>
+    </div>
+</div>

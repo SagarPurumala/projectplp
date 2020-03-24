@@ -6,12 +6,11 @@ import { AppComponent } from './app.component';
 import { AdminModule } from './admin/admin.module';
 import { AdminhomeComponent } from './admin/adminhome/adminhome.component';
 import { HeaderComponent } from './header/header.component';
-
-
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+   
    
   ],
   imports: [
