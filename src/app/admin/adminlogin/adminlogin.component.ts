@@ -11,10 +11,12 @@ import { NavbarService } from 'src/app/navbar.service';
 export class AdminloginComponent implements OnInit {
   aloginGroup;
   error;
-  constructor(private builder:FormBuilder, private router: Router,private nav:NavbarService) { }
+  constructor(private builder:FormBuilder, private router: Router,private nav:NavbarService,private navh:NavbarService) { }
 
   ngOnInit() {
+    this.navh.show();
     this.nav.hide();
+    
     this.aloginGroup=this.builder.group({
       aemail:['',[Validators.required]],
       apassword: ['',[Validators.required]],

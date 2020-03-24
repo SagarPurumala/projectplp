@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-sm navbar-light bg-dark">
+<nav *ngIf="navh.hvisible" class="navbar navbar-expand-sm navbar-light bg-dark" >
     <div class="collapse navbar-collapse" id="collapsibleNavId">
        <img id="image" src="./assets/logo.jpeg" >
         <h2 style="color:wheat;">PROJECT WORLDS BANK</h2>
@@ -12,7 +12,7 @@
                 <a class="nav-link" href="#" style="color: white;">HOME</a>
             </li>
             <li class="nav-item" style="margin-right: 30px;">
-                <a class="nav-link" routerLink="adminhome" style="color: white;">NEWS</a>
+                <a class="nav-link" routerLink="userhome" style="color: white;">NEWS</a>
             </li>
             <li class="nav-item" style="margin-right: 30px;">
                 <a class="nav-link" routerLink="adminlogin" style="color: white;">CONTACT</a>

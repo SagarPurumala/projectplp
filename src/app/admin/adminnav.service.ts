@@ -4,9 +4,13 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class AdminnavService {
-  visible: boolean;
-  constructor() { this.visible = false;  }
-  hide() { this.visible = false; }
+  avisible: boolean;
 
-  show() { this.visible = true; }
+  constructor() { this.avisible = false; 
+    }
+  hide() { this.avisible = false;
+     }
+
+  show() { this.avisible = true;
+    }
 }
