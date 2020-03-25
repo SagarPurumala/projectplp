@@ -5,15 +5,15 @@ import { Injectable } from '@angular/core';
 })
 export class NavbarService {
   visible: boolean;
-  hvisible:boolean;
+  
   constructor() {  this.visible = false;
-    this.hvisible = false;  }
+      }
 
   hide() { this.visible = false;
-    this.hvisible = false; }
+    }
 
-  show() { this.visible = true;
-    this.hvisible = true;  }
+  show() { this.visible = true;}
+  
 
   toggle() { this.visible = !this.visible; }
  

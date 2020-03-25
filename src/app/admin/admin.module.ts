@@ -10,8 +10,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {path:"addcustomer",component:AddcustomersComponent},
-  {path:"adminhome",component:AdminhomeComponent,children:[{path:"addcustomer",component:AddcustomersComponent}]},
-  {path:"adminhome",component:AdminhomeComponent,children:[{path:"header",component:HeaderComponent}]}
+  // {path:"adminhome",component:AdminhomeComponent,children:[{path:"addcustomer",component:AddcustomersComponent}]},
+  
 ];
 
 @NgModule({

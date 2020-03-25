@@ -8,11 +8,11 @@ import { NavbarService } from '../navbar.service';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private nav:NavbarService,private navh:NavbarService) { }
+  constructor(private nav:NavbarService) { }
 
   ngOnInit() {
     this.nav.show();
-    this.navh.show();
+  
   }
 
 }

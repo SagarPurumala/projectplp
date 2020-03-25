@@ -1,11 +1,13 @@
 .sidebar {
-    margin: 0;
+  position: absolute;
+    margin-top: 0px;
     padding: 0;
     width: 300px;
     background-color:darkgray;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
+   
+    height: 150%;
+    /* overflow: auto; */
+    
   }
   
   /* Sidebar links */
@@ -30,13 +32,15 @@
   
   /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
   div.content {
-      /* margin-top: 100px; */
+       margin-top: 0px; 
     margin-left: 300px;
     padding: 5px 16px;
-    height: 300px;
+    /* height: 900px; */
+    
+    /* overflow: scroll; */
     
   }
-  
+
   /* On screens that are less than 700px wide, make the sidebar into a topbar */
   @media screen and (max-width: 700px) {
     .sidebar {

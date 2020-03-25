@@ -11,10 +11,10 @@ import { NavbarService } from 'src/app/navbar.service';
 export class AdminloginComponent implements OnInit {
   aloginGroup;
   error;
-  constructor(private builder:FormBuilder, private router: Router,private nav:NavbarService,private navh:NavbarService) { }
+  constructor(private builder:FormBuilder, private router: Router,private nav:NavbarService) { }
 
   ngOnInit() {
-    this.navh.show();
+   
     this.nav.hide();
     
     this.aloginGroup=this.builder.group({

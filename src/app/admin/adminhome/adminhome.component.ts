@@ -13,11 +13,17 @@ export class AdminhomeComponent implements OnInit {
   constructor(private nav:NavbarService,private router: Router,private adminnav:AdminnavService) { }
 
   ngOnInit() {
-  //  this.adminnav.show();
+   this.adminnav.show();
     this.nav.hide();
    
   }
   addcustomers(){
     this.router.navigate(['/addcustomer']);
+  }
+  adminhome(){
+    this.router.navigate(['/adminhome']);
+  }
+  home(){
+    this.router.navigate(['/adminlogin']);
   }
 }

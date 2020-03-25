@@ -4,7 +4,7 @@
     <div class="collapse navbar-collapse" id="collapsibleNavId">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-                <a class="nav-link" routerLink="adminlogin" style="color: white;"><h4><i class="fa fa-sign-out">Logout </i></h4></a>
+                <a class="nav-link" (click)="home()" style="color: white;"><h4><i class="fa fa-sign-out">Logout </i></h4></a>
             </li>
             
         </ul>
@@ -12,15 +12,15 @@
     </div>
 </nav>
 <!-- <div *ngIf="adminnav.visible" class="sidebar"> -->
-    <div class="sidebar">
-    <a class="active" href="#home">Home</a>
+    <nav *ngIf="adminnav.avisible" class="sidebar">
+    <a class="active" (click)="adminhome()">Home</a>
     <a href="#news">My Customers</a>
     <a (click)="addcustomers()">Add Customer</a>
     <a href="#about">Manage Customers</a>
     <a href="#about">Customer Griveances</a>
     <a href="#about">Website Management</a>
     <a href="#about">Post News</a>
-  </div>
+    </nav>
   <div class="content">
     <h2 style="text-align: center ">Welcome Admin</h2>
    <hr >
