@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <div *ngIf="adminnav.visible" class="sidebar"> -->
+    <nav *ngIf="adminnav.avisible" class="sidebar">
+    <a  (click)="adminhome()">Home</a>
+    <a (click)="mycustomers()">My Customers</a>
+    <a (click)="addcustomers()">Add Customer</a>
+    <a href="#about">Manage Customers</a>
+    <a href="#about">Customer Griveances</a>
+    <a href="#about">Website Management</a>
+    <a href="#about">Post News</a>
+    </nav>
+    <div class="content">
+    <div class="search-container">
+        <form class="form-inline">
+          <input type="text" placeholder="Search Customers.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+          <div class="form-group">
+            <label  class="mr-sm-2 sr-only"for=""></label>
+            <select class="form-control" name="" id="">
+              <option>By:Name</option>
+              <option>By:Acc.No</option>
+              <option></option>
+            </select>
+          </div>
+        </form>
+      </div>
+      
+      </div>
+      
