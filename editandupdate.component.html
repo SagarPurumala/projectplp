@@ -1,0 +1,113 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<nav class="navbar navbar-expand-sm navbar-light bg-dark">
+    <h2 style="color: white; margin-right: 950px;">Welcome, Admin</h2>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="adminlogin" style="color: white;"><h4><i class="fa fa-sign-out">Logout </i></h4></a>
+            </li>
+            
+        </ul>
+        
+    </div>
+</nav>
+<!-- <div *ngIf="adminnav.visible" class="sidebar"> -->
+    <div class="sidebar">
+    <a class="active" href="#home">Home</a>
+    <a href="#news">My Customers</a>
+    <a (click)="addcustomers()">Add Customer</a>
+    <a href="#about">Manage Customers</a>
+    <a href="#about">Customer Griveances</a>
+    <a href="#about">Website Management</a>
+    <a href="#about">Post News</a>
+  </div>
+  <div class="content">
+    <h2 style="text-align: center ">Edit/Update Customer details</h2>
+   <hr >
+   <div style="margin:50px;">
+    <form>
+            <div class="form-group col-sm-4">
+                <label for=""><b>Customer ID:</b></label>
+                <input type="text" class="form-control" id="">
+            </div>
+            <div class="form-row">
+
+            <div class="form-group col-sm-4">
+                <label for=""><b>First Name:</b></label>
+                <input type="text" class="form-control" id="">
+            </div>
+            <div class="form-group col-sm-4">
+                <label for=""><b>Last Name:</b></label>
+                <input type="text" class="form-control" id="">
+            </div>
+            </div>
+            <div class="form-group col-sm-4">
+                <label for=""><b>Balance(INR):</b></label>
+                <input type="text" class="form-control" id="">
+            </div>
+            <div class="form-group col-sm-4">
+                <label for=""><b>Gender:</b></label>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="" id="" value="checkedValue"> Female
+                    </label>
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="" id="" value="checkedValue"> Male
+                    </label>
+                </div>
+          </div>
+          <div class="form-group col-sm-4">
+            <label for=""><b>Date of Birth:</b></label>
+            <input type="text" class="form-control" id="">
+        </div>
+        <div class="form-group col-sm-4">
+            <label for=""><b>Aadhar No:</b></label>
+            <input type="text" class="form-control" id="">
+        </div>
+        <div class="form-group col-sm-4">
+            <label for="exampleFormControlTextarea1"><b>Address</b></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="form-group col-sm-4">
+            <label for="country">Bank Branch:</label>
+            <select class="form-control form-control-sm" name="country" id="country2">
+                <option value="1">us</option>
+                <option value="2">uk</option>
+                <option value="3">india</option>
+            </select>
+       </div >
+       <div class="form-group col-sm-4">
+        <label for=""><b>Aadhar No:</b></label>
+        <input type="text" class="form-control" id="">
+    </div>
+    <div class="form-group col-sm-4">
+        <label for=""><b>PIN(4 digit):</b></label>
+        <input type="text" class="form-control" id="">
+    </div>
+
+    <div class="form-row">
+
+        <div class="form-group col-sm-4">
+            <label for=""><b>User Name:</b></label>
+            <input type="text" class="form-control" id="">
+        </div>
+        <div class="form-group col-sm-4">
+            <label for=""><b>Password:</b></label>
+            <input type="text" class="form-control" id="">
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-sm-4">
+
+    <button type="button" class="btn btn-success">Go Back</button>
+    </div>
+    <div class="form-group col-sm-4">
+
+    <button type="button" class="btn btn-primary">Primary</button>
+
+    </div>
+</div>
+    </form>
+</div>
+  </div>
