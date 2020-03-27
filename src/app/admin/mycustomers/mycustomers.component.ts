@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { AdminnavService } from '../adminnav.service';
+
 import { NavbarService } from 'src/app/navbar.service';
-import { NavmethodService } from '../navmethod.service';
+
 import { Router } from '@angular/router';
+import { AdminnavService } from '../adminnav.service';
 
 @Component({
   selector: 'app-mycustomers',
