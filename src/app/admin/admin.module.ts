@@ -6,6 +6,7 @@ import { AddcustomersComponent } from './addcustomers/addcustomers.component';
 import { Routes,RouterModule } from '@angular/router';
 import { HeaderComponent } from '../header/header.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MycustomersComponent } from './mycustomers/mycustomers.component';
 
 
 const routes: Routes = [
@@ -15,7 +16,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [AdminhomeComponent, AdminloginComponent, AddcustomersComponent],
+  declarations: [AdminhomeComponent, AdminloginComponent, AddcustomersComponent, MycustomersComponent],
   imports: [RouterModule.forChild(routes),
   
     CommonModule,

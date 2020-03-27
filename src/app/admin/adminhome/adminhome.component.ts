@@ -26,4 +26,7 @@ export class AdminhomeComponent implements OnInit {
   home(){
     this.router.navigate(['/adminlogin']);
   }
+  mycustomers(){
+    this.router.navigate(['/mycustomers']);
+  }
 }

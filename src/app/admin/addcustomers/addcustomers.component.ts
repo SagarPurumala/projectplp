@@ -24,7 +24,10 @@ export class AddcustomersComponent implements OnInit {
     this.router.navigate(['/adminhome']);
   }
   home(){
-    this.router.navigate(['/header']);
+    this.router.navigate(['/adminlogin']);
+  }
+  mycustomers(){
+    this.router.navigate(['/mycustomers']);
   }
 
 }

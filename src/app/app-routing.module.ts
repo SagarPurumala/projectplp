@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { AdminloginComponent } from './admin/adminlogin/adminlogin.component';
 import { UserHomeComponent } from './user/user-home/user-home.component';
 import { UserLoginComponent } from './user/user-login/user-login.component';
+import { MycustomersComponent } from './admin/mycustomers/mycustomers.component';
 
 
 const routes: Routes = [
@@ -15,7 +16,9 @@ const routes: Routes = [
   //{path:"header",component:HeaderComponent},
  // {path:"adminhome",component:AdminhomeComponent,children:[{path:"adminlogin",component:AdminloginComponent}]},
   {path:'userhome',component:UserHomeComponent},
-  {path:'userlogin',component:UserLoginComponent}
+  {path:'userlogin',component:UserLoginComponent},
+
+  {path:"mycustomers",component:MycustomersComponent}
 ];
 
 @NgModule({
